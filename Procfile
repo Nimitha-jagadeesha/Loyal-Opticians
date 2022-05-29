@@ -1,0 +1,1 @@
+web: gunicorn loyal_opticals.wsgi
