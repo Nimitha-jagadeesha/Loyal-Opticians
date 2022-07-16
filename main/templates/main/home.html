@@ -11,104 +11,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <title>About Us</title>
-    <link rel="stylesheet" type="text/css" media="all" href="./calender.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="{% static 'style.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="./magento.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="./carousel.min.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="./bootstrap-tiny.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="./styles.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="./loyaloptician.css" />
-    <link rel="stylesheet" type="text/css" media="all" href="./storelocator.css" />
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="./styles-l.css" />
-    <link rel="stylesheet" type="text/css" media="print" href="./print.css" />
-    <script type="text/javascript" src="./require.js"></script>
-    <script type="text/javascript" src="./mixins.js"></script>
-    <script type="text/javascript" src="./requirejs-config.js"></script>
-    <script type="text/javascript" src="./polyfill.js"></script>
-    <script type="text/javascript" src="./pippin.min.js"></script>
-    <script type="text/javascript" src="./custom_storelocator.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/calender.css'%}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'style.css'%}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/magento.css'%}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/carousel.min.css'%}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/bootstrap-tiny.css'%}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/styles.css'%}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/loyaloptician.css'%}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/storelocator.css'%}" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="{% static 'css/styles-l.css'%}" />
+    <link rel="stylesheet" type="text/css" media="print" href="{% static 'css/print.css'%}" />
+    <script type="text/javascript" src="{% static 'js/require.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/mixins.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/requirejs-config.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/polyfill.js"></script>
+    <script type="text/javascript" src="{% static 'js/pippin.min.js'%}"></script>
+    <script type="text/javascript" src="{% static 'js/custom_storelocator.js'%}"></script>
     <link rel="canonical" href="#/aboutus/" />
 
-    <script src="./jquery.min.js"></script>
+    <script src="{% static 'js/jquery.min.js'%}"></script>
 
-    <script src="./bootstrap.js"></script>
+    <script src="{% static 'js/bootstrap.js'%}"></script>
 
 
-    <script src="./owl.carousel.min.js"></script>
+    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
 
-    <script src="./wow.js"></script>
+    <script src="{% static 'js/wow.js'%}"></script>
 
-    <script src="./scrollspy.js"></script>
+    <script src="{% static 'js/scrollspy.js'%}"></script>
 
 
     <link rel="stylesheet" type="text/css"
-        href="./bootstrap-theme.min.css">
+        href="{% static 'css/bootstrap-theme.min.css'%}">
     <link rel="stylesheet" type="text/css"
-        href="./bootstrap.css">
-
-    <link rel="stylesheet" type="text/css"
-        href="./font-awesome.min.css" />
+        href="{% static 'css/bootstrap.css'%}">
 
     <link rel="stylesheet" type="text/css"
-        href="./owl.carousel.min.css" />
+        href="{% static 'css/font-awesome.min.css'%}" />
 
     <link rel="stylesheet" type="text/css"
-        href="./jquery.mCustomScrollbar.css" />
+        href="{% static 'css/owl.carousel.min.css'%}" />
 
     <link rel="stylesheet" type="text/css"
-        href="./animate.css" />
+        href="{% static 'css/jquery.mCustomScrollbar.css'%}" />
 
-    <script type="text/javascript">
-        var flatRate = 0;
-        var myVarFlatRateTableTimer = setInterval(flatRateTableTimer, 500);
-        function flatRateTableTimer() {
-            var tableObj = document.getElementsByClassName("table-checkout-shipping-method");
-            if (typeof (tableObj[0]) != 'undefined' && tableObj[0] != null) {
-                flatRate = parseInt((tableObj[0].rows[2].cells.length));
-                if (flatRate >= 1) {
-                    tableObj[0].deleteRow(2);
-                }
-                clearInterval(myVarFlatRateTableTimer);
-                
-            }
-        }
+    <link rel="stylesheet" type="text/css"
+        href="{% static 'css/animate.css'%}" />
 
-
-    </script>
-
-
-
-
-    <script id="ze-snippet"
-        src="https://static.zdassets.com/ekr/snippet.js?key=ccd82530-ac4c-49dc-b5ba-d331c1938eb9"> </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131344494-1"></script>
-    <script type="text/javascript">
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-131344494-1');
-    </script>
-
-
+        <script src="{% static 'js/main.js'%}"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-598476150"></script>
-    <script
-        type="text/javascript"> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-598476150'); </script>
-
-
-
-    <script type="text/javascript">(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-K2SFXMC');</script>
-
-
-
-
     <script type="text/javascript">
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
@@ -378,7 +329,7 @@
 
                 <a class="search_link_a">
                     <img src="https://www.gkboptical.com/pub/static/frontend/Gkb/Gkboptical/en_US/images/new-search-icon.png"
-                        alt="Loyal Opticians Search" class="img-responsive">
+                        alt="GKB Opticals Search" class="img-responsive">
                 </a>
 
 
@@ -388,7 +339,7 @@
                     <li class="before-sign-in" style="">
                         <a id="ajaxlogin" href="javascript:;">
                             <img src="https://www.gkboptical.com/pub/static/frontend/Gkb/Gkboptical/en_US/images/new-user-icon.png"
-                                alt="Loyal Opticians User" class="img-responsive">
+                                alt="GKB Opticals User" class="img-responsive">
                         </a>
                     </li>
 
@@ -403,7 +354,7 @@
                     <li class="clearfix HomeServiceCartIcon">
                         <a href="javascript:;" id="cart">
                             <img src="https://www.gkboptical.com/pub/static/frontend/Gkb/Gkboptical/en_US/images/new-home-service-cart-icon.png"
-                                alt="Loyal Opticians Home Service" class="img-responsive">
+                                alt="GKB Opticals Home Service" class="img-responsive">
                             <span class="badge" id="product_count"></span>
                         </a>
 
@@ -2289,8 +2240,8 @@
 
                     <p>
                         <!-- <h1 class="brands-page-title">About Us</h1>
-    <p>Loyal Opticians is the most prominent name in Optical Retail Business with the experience of over 66 years. In 1968 it first entered the Retailing business by inaugurating the first store in Gariahat, Kolkata. Founded by the visionary Mr. Brijendra Kumar Gupta the company was awarded the ‘Most Admired Retailer’s award of the year 2013-2014 and also won the title of ‘India’ss Most Trusted Brand’ in 2015.</p>
-    <p>Loyal Opticians started its online optical store in India, <a title="www.gkboptical.com" href="https://www.gkboptical.com/">www.GKBOptical.com</a> in 2011 with a collection assembling over 60 international and Indian brands, the website offers a large variety of Eyeglasses, Sunglasses and Contact lenses.</p>
+    <p>GKB Opticals is the most prominent name in Optical Retail Business with the experience of over 66 years. In 1968 it first entered the Retailing business by inaugurating the first store in Gariahat, Kolkata. Founded by the visionary Mr. Brijendra Kumar Gupta the company was awarded the ‘Most Admired Retailer’s award of the year 2013-2014 and also won the title of ‘India’ss Most Trusted Brand’ in 2015.</p>
+    <p>GKB Opticals started its online optical store in India, <a title="www.gkboptical.com" href="https://www.gkboptical.com/">www.GKBOptical.com</a> in 2011 with a collection assembling over 60 international and Indian brands, the website offers a large variety of Eyeglasses, Sunglasses and Contact lenses.</p>
     <p>&nbsp;</p>
     <p><strong>Key Features:</strong></p>
     <ul>
@@ -2300,7 +2251,7 @@
        <li>1 year warranty on all products</li>
        <li>Live chat and Real time help for customers</li>
     </ul>
-    <p>With over 60 years in Optical Industry, Loyal Opticians group has served more than 1 Million customers.</p>
+    <p>With over 60 years in Optical Industry, GKB Opticals group has served more than 1 Million customers.</p>
     <p>&nbsp;</p>
     <p><strong>Registered Corporate Address:</strong></p>
     <address>GKB Online Trading Pvt. Ltd.<br> P46, Kasba Industrial Estate, <br> Phase II Kolkata 700107</address>
@@ -2315,13 +2266,13 @@
        <li>Be the most Preferred Eyewear brand in the country.</li>
     </ul>
     <h2 class="brands-page-title">Management</h2>
-    <p>Loyal Opticians, is nothing without it’s zealous Management. The management works under the guidance of it's founder and visionary Mr. B. K. Gupta. Led by innovation,Loyal Opticians is striving towards excelling in the Optical Retail Industry and becoming the best. Loyal Opticians Today is a premier Name in the Optical Industry due to the able guidance of Mr. B.K. Gupta, Mr. S.K. Gupta and Mr. L. K. Gupta.</p>
+    <p>GKB Opticals, is nothing without it’s zealous Management. The management works under the guidance of it's founder and visionary Mr. B. K. Gupta. Led by innovation,GKB Opticals is striving towards excelling in the Optical Retail Industry and becoming the best. GKB Opticals Today is a premier Name in the Optical Industry due to the able guidance of Mr. B.K. Gupta, Mr. S.K. Gupta and Mr. L. K. Gupta.</p>
     <h2 class="brands-page-title marT20">Board Of Directors</h2>
     <div class="director-sec row">
        <div class="bod col-md-4 col-sm-4 col-xs-12">
           <div class="mng-block clearfix">
              <div class="bod-txt">
-                <p><strong>Mr. B.K. Gupta</strong><br><span style="color: #a3a3a3;">Chairman &amp; Managing Director</span> <br>The founder of Loyal Opticians in Agra, in the year 1959. A Bachelor of Commerce, has years of experience in Optical Retail Business. A member of Optical Laboratory Association, USA &amp; more.</p>
+                <p><strong>Mr. B.K. Gupta</strong><br><span style="color: #a3a3a3;">Chairman &amp; Managing Director</span> <br>The founder of GKB Opticals in Agra, in the year 1959. A Bachelor of Commerce, has years of experience in Optical Retail Business. A member of Optical Laboratory Association, USA &amp; more.</p>
              </div>
           </div>
        </div>
@@ -2335,7 +2286,7 @@
        <div class="bod col-md-4 col-sm-4 col-xs-12">
           <div class="mng-block clearfix">
              <div class="bod-txt">
-                <p><strong>Mr. Lalit Kumar Gupta</strong><br><span style="color: #a3a3a3;">COO &amp; Marketing Director</span><br>Manages the various Indian and international brands for Loyal Opticians with 25+ <span>&nbsp;</span>years experience in Retail Business. An <span>&nbsp;</span>M.B.A., and member of American Marketing Association &amp; many others.</p>
+                <p><strong>Mr. Lalit Kumar Gupta</strong><br><span style="color: #a3a3a3;">COO &amp; Marketing Director</span><br>Manages the various Indian and international brands for GKB Opticals with 25+ <span>&nbsp;</span>years experience in Retail Business. An <span>&nbsp;</span>M.B.A., and member of American Marketing Association &amp; many others.</p>
              </div>
           </div>
        </div>
@@ -2452,7 +2403,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-md-12 col-sm-12 text-center">
                                         <h2 class="blueprint-heading">
-                                            <span>THE Loyal Opticians BLUEPRINT</span>
+                                            <span>THE GKB OPTICALS BLUEPRINT</span>
                                             <span class="span-bdr"></span>
                                         </h2>
                                     </div>
@@ -2545,23 +2496,23 @@
                                 <ul class="trust_badges">
                                     <li>
                                         <img src="https://www.gkboptical.com/pub/static/frontend/Gkb/Gkboptical/en_US/images/GKB-TRUST-BADGES-01.png"
-                                            alt="Loyal Opticians Trust Badges">
+                                            alt="GKB Opticals Trust Badges">
                                     </li>
                                     <li>
                                         <img src="https://www.gkboptical.com/pub/static/frontend/Gkb/Gkboptical/en_US/images/GKB-TRUST-BADGES-02.png"
-                                            alt="Loyal Opticians Trust Badges">
+                                            alt="GKB Opticals Trust Badges">
                                     </li>
                                     <li>
                                         <img src="https://www.gkboptical.com/pub/static/frontend/Gkb/Gkboptical/en_US/images/GKB-TRUST-BADGES-03.png"
-                                            alt="Loyal Opticians Trust Badges">
+                                            alt="GKB Opticals Trust Badges">
                                     </li>
                                     <li>
                                         <img src="https://www.gkboptical.com/pub/static/frontend/Gkb/Gkboptical/en_US/images/GKB-TRUST-BADGES-04.png"
-                                            alt="Loyal Opticians Trust Badges">
+                                            alt="GKB Opticals Trust Badges">
                                     </li>
                                     <li>
                                         <img src="https://www.gkboptical.com/pub/static/frontend/Gkb/Gkboptical/en_US/images/GKB-TRUST-BADGES-05.png"
-                                            alt="Loyal Opticians Trust Badges">
+                                            alt="GKB Opticals Trust Badges">
                                     </li>
                                 </ul>
                             </div>
@@ -2683,7 +2634,7 @@
                     <div class="clearfix footer-txt-cls">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12 copy_right">
-                                Copyright © 2021 Loyal Opticianstical, Inc. All rights reserved.
+                                Copyright © 2021 GKB Optical, Inc. All rights reserved.
                             </div>
                         </div>
                     </div>
