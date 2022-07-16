@@ -11,55 +11,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <title>About Us</title>
-    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/calender.css'%}" />
-    <link rel="stylesheet" type="text/css" media="all" href="{% static 'style.css'%}" />
-    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/magento.css'%}" />
-    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/carousel.min.css'%}" />
-    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/bootstrap-tiny.css'%}" />
-    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/styles.css'%}" />
-    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/loyaloptician.css'%}" />
-    <link rel="stylesheet" type="text/css" media="all" href="{% static 'css/storelocator.css'%}" />
-    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="{% static 'css/styles-l.css'%}" />
-    <link rel="stylesheet" type="text/css" media="print" href="{% static 'css/print.css'%}" />
-    <script type="text/javascript" src="{% static 'js/require.js'%}"></script>
-    <script type="text/javascript" src="{% static 'js/mixins.js'%}"></script>
-    <script type="text/javascript" src="{% static 'js/requirejs-config.js'%}"></script>
-    <script type="text/javascript" src="{% static 'js/polyfill.js"></script>
-    <script type="text/javascript" src="{% static 'js/pippin.min.js'%}"></script>
-    <script type="text/javascript" src="{% static 'js/custom_storelocator.js'%}"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="./calender.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="{% static 'style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./magento.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./carousel.min.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./bootstrap-tiny.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./loyaloptician.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="./storelocator.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="./styles-l.css" />
+    <link rel="stylesheet" type="text/css" media="print" href="./print.css" />
+    <script type="text/javascript" src="./require.js"></script>
+    <script type="text/javascript" src="./mixins.js"></script>
+    <script type="text/javascript" src="./requirejs-config.js"></script>
+    <script type="text/javascript" src="./polyfill.js"></script>
+    <script type="text/javascript" src="./pippin.min.js"></script>
+    <script type="text/javascript" src="./custom_storelocator.js"></script>
     <link rel="canonical" href="#/aboutus/" />
 
-    <script src="{% static 'js/jquery.min.js'%}"></script>
+    <script src="./jquery.min.js"></script>
 
-    <script src="{% static 'js/bootstrap.js'%}"></script>
-
-
-    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
-
-    <script src="{% static 'js/wow.js'%}"></script>
-
-    <script src="{% static 'js/scrollspy.js'%}"></script>
+    <script src="./bootstrap.js"></script>
 
 
-    <link rel="stylesheet" type="text/css"
-        href="{% static 'css/bootstrap-theme.min.css'%}">
-    <link rel="stylesheet" type="text/css"
-        href="{% static 'css/bootstrap.css'%}">
+    <script src="./owl.carousel.min.js"></script>
+
+    <script src="./wow.js"></script>
+
+    <script src="./scrollspy.js"></script>
+
 
     <link rel="stylesheet" type="text/css"
-        href="{% static 'css/font-awesome.min.css'%}" />
+        href="./bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="./bootstrap.css">
 
     <link rel="stylesheet" type="text/css"
-        href="{% static 'css/owl.carousel.min.css'%}" />
+        href="./font-awesome.min.css" />
 
     <link rel="stylesheet" type="text/css"
-        href="{% static 'css/jquery.mCustomScrollbar.css'%}" />
+        href="./owl.carousel.min.css" />
 
     <link rel="stylesheet" type="text/css"
-        href="{% static 'css/animate.css'%}" />
+        href="./jquery.mCustomScrollbar.css" />
 
-        <script src="{% static 'js/main.js'%}"></script>
+    <link rel="stylesheet" type="text/css"
+        href="./animate.css" />
+
+    <script type="text/javascript">
+        var flatRate = 0;
+        var myVarFlatRateTableTimer = setInterval(flatRateTableTimer, 500);
+        function flatRateTableTimer() {
+            var tableObj = document.getElementsByClassName("table-checkout-shipping-method");
+            if (typeof (tableObj[0]) != 'undefined' && tableObj[0] != null) {
+                flatRate = parseInt((tableObj[0].rows[2].cells.length));
+                if (flatRate >= 1) {
+                    tableObj[0].deleteRow(2);
+                }
+                clearInterval(myVarFlatRateTableTimer);
+                
+            }
+        }
+
+
+    </script>
+
+
+
+
+    <script id="ze-snippet"
+        src="https://static.zdassets.com/ekr/snippet.js?key=ccd82530-ac4c-49dc-b5ba-d331c1938eb9"> </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131344494-1"></script>
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131344494-1');
+    </script>
+
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-598476150"></script>
+    <script
+        type="text/javascript"> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-598476150'); </script>
+
+
+
+    <script type="text/javascript">(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K2SFXMC');</script>
+
+
+
+
+    <script type="text/javascript">
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '249145339934973');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=249145339934973&ev=PageView&noscript=1" /></noscript>
+
+
+
+
+
+
+
+
+
+    <script
+        type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/www.gkboptical.com\/"}</script>
+    <script
+        type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":{"@id":"https:\/\/www.gkboptical.com\/aboutus","name":"About Us"},"position":1}]}</script>
+    <script
+        type="application/ld+json">{"@context":"http:\/\/schema.org\/","@type":"WebPage","speakable":{"@type":"SpeakableSpecification","cssSelector":[".cms-content"],"xpath":["\/html\/head\/title"]}}</script>
 </head>
 
 <body data-container="body"
@@ -144,6 +225,8 @@
             </div>
         </div>
     </noscript>
+    <!-- BEGIN GTAG CART SCRIPT -->
+    <!-- END GTAG CART SCRIPT -->
 
     <div class="page-wrapper">
         <header class="page-header">
@@ -153,7 +236,9 @@
                         <li><a href="https://www.gkboptical.com/customer/account/">My Account</a></li>
                         <li class="link wishlist" data-bind="scope: 'wishlist'">
                             <a href="https://www.gkboptical.com/wishlist/">My Wish List
+                                <!-- ko if: wishlist().counter -->
                                 <span data-bind="text: wishlist().counter" class="counter qty"></span>
+                                <!-- /ko -->
                             </a>
                         </li>
                         <script type="text/x-magento-init">
@@ -2598,7 +2683,7 @@
                     <div class="clearfix footer-txt-cls">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12 copy_right">
-                                Copyright © 2021 GKB Optical, Inc. All rights reserved.
+                                Copyright © 2021 Loyal Opticianstical, Inc. All rights reserved.
                             </div>
                         </div>
                     </div>
