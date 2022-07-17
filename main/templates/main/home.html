@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -18,12 +21,15 @@
     </script>
     <title>Loyal Opticals</title>
     <style>
-        body{
+        body {
             margin: 0px;
+            font-family: 'Poppins', sans-serif;
         }
+
         /* Add a red background color to the top navigation */
         .topnav {
-            background-color: rgb(192, 21, 21);
+            padding: 20px;
+            background-color: rgba(224, 34, 35, 255);
             overflow: hidden;
         }
 
@@ -90,8 +96,8 @@
         /* Add a dark background on topnav links and the dropdown button on hover */
         .topnav a:hover,
         .dropdown:hover .dropbtn {
-            background-color: #555;
-            color: white;
+            background-color: white;
+            color: red;
         }
 
         /* Add a grey background to dropdown links on hover */
@@ -151,16 +157,22 @@
                 text-align: left;
             }
         }
+
+        .row {
+            display: flex;
+        }
+
+        .col {
+            margin: 3px;
+        }
     </style>
 
 </head>
 <header>
     <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <a href="#home"><b>Loyal Opticainas</b></a>
         <div class="dropdown">
-            <button class="dropbtn">Dropdown
+            <button class="dropbtn">Eyeglasses
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -169,9 +181,36 @@
                 <a href="#">Link 3</a>
             </div>
         </div>
-        <a href="#about">About</a>
+        <div class="dropdown">
+            <button class="dropbtn">Contact Lenses
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <div class="row">
+                    <p class="col">
+                        I'm looking for
+                    </p>
+                    <p>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Home service
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a href="">Login</a>
     </div>
+
 </header>
 
 <body>
