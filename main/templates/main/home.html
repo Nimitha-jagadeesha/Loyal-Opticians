@@ -11,12 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
         function myFunction() {
             var x = document.getElementById("myTopnav");
@@ -29,6 +29,59 @@
     </script>
     <title>Loyal Opticals</title>
     <style>
+        .fa {
+            padding: 10px;
+            text-align: center;
+            margin: 5px 2px;
+            font-size: 30px;
+            width: 50px;
+
+        }
+
+        .fa-facebook {
+            background: #4267B2;
+            border-radius: 50px;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #1DA1F2;
+            border-radius: 50px;
+            color: white;
+        }
+
+        .fa-envelope {
+            background: #55ACEE;
+            border-radius: 50px;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            border-radius: 50px;
+            color: white;
+        }
+
+        .fa-instagram {
+            background-image: linear-gradient(to bottom, rgb(64, 93, 230), rgb(88, 81, 219), rgb(131, 58, 180), rgb(193, 53, 132), rgb(225, 48, 108), rgb(253, 29, 29), rgb(245, 96, 64), rgb(247, 119, 55), rgb(252, 175, 69), rgb(255, 220, 128));
+            border-radius: 50px;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #FF0000;
+            border-radius: 50px;
+            color: white;
+        }
+
+        .fa:hover {
+            color: rgb(0, 217, 255);
+        }
+
+        a:hover {
+            color: rgb(0, 217, 255);
+        }
+
         body {
             margin: 0px;
             font-family: 'Poppins', sans-serif;
@@ -178,7 +231,9 @@
 </head>
 <header>
     <div class="topnav" id="myTopnav">
-        <a href="{% url 'Home' %}"><image src="../../static/image/logo.webp" width ="20px" height ="auto"/><b> &nbsp; Loyal Opticainas</b></a>
+        <a href="{% url 'Home' %}">
+            <image src="../../static/image/logo.webp" width="20px" height="auto" /><b> &nbsp; Loyal Opticainas</b>
+        </a>
         <a href="{% url 'Eyeglasses' %}">Eye glasses</a>
         <a href="{% url 'Contactlenses' %}">Contact lenses</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -193,41 +248,57 @@
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-          
+
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-              <div class="item active">
-                <img src="../../static/image/car-1.jpg" alt="Los Angeles">
-              </div>
-          
-              <div class="item">
-                <img src="../../static/image/car-2.jpg" alt="Chicago">
-              </div>
-          
-              <div class="item">
-                <img src="../../static/image/cat-3.jpg" alt="New York">
-              </div>
+                <div class="item active">
+                    <img src="../../static/image/car-1.jpg" alt="Los Angeles">
+                </div>
+
+                <div class="item">
+                    <img src="../../static/image/car-2.jpg" alt="Chicago">
+                </div>
+
+                <div class="item">
+                    <img src="../../static/image/cat-3.jpg" alt="New York">
+                </div>
             </div>
-          
+
             <!-- Left and right controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
             </a>
-          </div>
-      </div>
-      
+        </div>
+    </div>
 
+    <br>
 </body>
-<footer>
-    
+<hr style="color:#FF0000; background-color: #FF0000; height: 2px; margin: 0px;">
+<footer style="padding: 50px; background-color: red;">
+    <div class="ct-socials row col-12" style="justify-content: center;">
+        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+        <a href="mailto:" target="_blank"><i class="fa fa-envelope"></i></a>
+    </div>
+    <div class="text-center" style="margin:30px ;color:white;">
+        <b>
+            © 2022 Copyright:
+            <a href="https://goo.gl/maps" target="_blank">Loyal Opticians</a>
+        </b>
+        <br>
+    </div>
 </footer>
+
 </html>
